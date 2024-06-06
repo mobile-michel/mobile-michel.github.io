@@ -1,9 +1,9 @@
 {
-  "github": "https://github.com/mobile-michel/14-multi-blog",
+  "github": "https://github.com/mobile-michel/",
   "authorUrl": "https://michelmaillard.ch/",
   "name": "Welcome",
   "authorName": "Michel Maillard",
-  "description": "Eleventy 2.0.1 simple template with Liquid templating & Decap CMS.",
+  "description": "Blog with Eleventy, LiquidJS, classless CSS framework & DecapCMS.",
   "favicon": "/assets/img/favicon.png",
   "css": "/assets/css/style.css"
 }

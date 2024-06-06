@@ -1,4 +1,4 @@
-# Multi blog with Eleventy, Liquid, classless CSS framework & DecapCMS
+# Blog with Eleventy, LiquidJS, classless CSS framework & DecapCMS
 
 ### Folder structure
 
@@ -29,8 +29,7 @@
 ### Package.json scripts
 - "serve": "npx @11ty/eleventy --serve",
 - "start": "npx decap-server & npx @11ty/eleventy --serve",
-- "build": "@11ty/eleventy",
-- "build-gp": "eleventy --pathprefix '13-simple-blog'"
+- "build": "@11ty/eleventy"
 
 ### Dependencies
 - "@11ty/eleventy": "^2.0.1"

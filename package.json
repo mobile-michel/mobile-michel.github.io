@@ -1,17 +1,17 @@
 {
-  "name": "15-new-structure",
+  "name": "mobile-michel.github.io",
   "version": "1.0.0",
-  "description": "Multi blog with Eleventy, Liquid & DecapCMS",
+  "description": "Blog with Eleventy, LiquidJS, classless CSS framework & DecapCMS",
   "main": "eleventy.config.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
     "serve": "npx decap-server & npx @11ty/eleventy --serve",
-    "build": "eleventy",
-    "build-gp": "eleventy --pathprefix '15-new-structure'"
+    "build": "eleventy"
   },
   "keywords": [
     "eleventy",
-    "liquid"
+    "liquidjs",
+    "decapcms"
   ],
   "author": "Michel Maillard",
   "license": "ISC",
