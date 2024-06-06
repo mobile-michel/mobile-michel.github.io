@@ -1,10 +1,11 @@
 backend: # Required
-  name: git-gateway
+  name: github
+  repo: mobile-michel/mobile-michel.github.io # Required
   branch: main
 media_folder: "assets/img/" # Required
 public_folder: "assets/img/" # Required
 local_backend: true # Run "npx decap-server" for local backend | optional
-display_url: https://mobile-michel.github.io/13-simple-blog/
+display_url: https://mobile-michel.github.io/
 collections: # Required
   - name: "pages" # Required. Used in routes, e.g., /admin/collections/blog
     label: "Pages" # Required. Used in the UI

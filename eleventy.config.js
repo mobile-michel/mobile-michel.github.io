@@ -1,6 +1,6 @@
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addWatchTarget("./assets");
-    eleventyConfig.addPassthroughCopy("./assets");
+    eleventyConfig.addWatchTarget("src/assets");
+    eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
     return {
         dir: {
             input: "src/content", // Set the source for 11ty
