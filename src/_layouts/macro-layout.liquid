@@ -1,0 +1,16 @@
+---
+layout: base
+---
+<body-container data-layout="{{ tokens.layout }}">
+    <header>
+        {% include 'navigation/dropdown' %}
+        <h1>{{ site.name }}</h1>
+    </header>
+    <main-container>
+        {{ content }}
+    </main-container>
+    <footer>
+        {%- include 'navigation/footer' %}
+        {%- render 'copyright' %}
+    </footer>
+</body-container>

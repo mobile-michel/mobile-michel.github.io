@@ -8,13 +8,13 @@ header {
     color: var(--grey100);
 }
 
-main,
-footer {
+main{
     background-color: var(--grey200)
 }
 
 footer {
-    border-top: 1px solid var(--secondary-color)
+    background-color: var(--secondary-color);
+    border-top: 1px solid var(--grey500)
 }
 
 @media (prefers-color-scheme: dark) {

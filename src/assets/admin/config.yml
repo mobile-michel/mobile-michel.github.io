@@ -1,18 +1,16 @@
 backend: # Required
-  name: github
-  repo: mobile-michel/mobile-michel.github.io # Required
+  name: git-gateway
   branch: main
-media_folder: "assets/img/" # Required
+media_folder: "src/assets/img/" # Required
 public_folder: "assets/img/" # Required
 local_backend: true # Run "npx decap-server" for local backend | optional
-display_url: https://mobile-michel.github.io/
 collections: # Required
   - name: "pages" # Required. Used in routes, e.g., /admin/collections/blog
     label: "Pages" # Required. Used in the UI
     files:
       - label: "Homepage" # Used in the UI | required
         name: "index" # Used in routes, e.g., /admin/collections/blog | required
-        file: "content/index.md" # The path to the file | required
+        file: "src/content/index.md" # The path to the file | required
         fields: # The fields in front matter | required
           - { label: "Title", name: "title", widget: "string" } # required
           - { label: "Layout", name: "layout", widget: "string" }
@@ -20,7 +18,7 @@ collections: # Required
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Contact"
         name: "contact"
-        file: "content/contact.liquid"
+        file: "src/content/contact.liquid"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Layout", name: "layout", widget: "string" }
@@ -28,7 +26,7 @@ collections: # Required
           - { label: "Body", name: "body", widget: "markdown" }
   - label: "Blog"
     name: "blog"
-    folder: "content/blog"
+    folder: "src/content/blog"
     create: true
     editor:
       preview: false
@@ -40,7 +38,7 @@ collections: # Required
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Documentation"
     name: "doc"
-    folder: "content/doc"
+    folder: "src/content/doc"
     create: true
     editor:
       preview: false
@@ -73,3 +71,4 @@ collections: # Required
           - { label: Max-width, name: max-width, widget: select, options: [{ label: "narrow", value: "40rem" }, { label: "medium", value: "50rem" }, { label: "large", value: "60rem" }, { label: "full", value: "100%" }] }
           - { label: Spacing, name: spacing, widget: select, options: [{ label: "dense", value: ".1rem" }, { label: "medium", value: "1rem" }, { label: "sparse", value: "2rem" }] }
           - { label: Text font size, name: text-font-size, widget: select, options: [{ label: "small", value: "clamp(0.625rem, 0.693vw + 0.446rem, 1rem)" }, { label: "medium", value: "clamp(1rem, 0.924vw + 0.511rem, 1.25rem)" }, { label: "big", value: "clamp(1.313rem, 1.178vw + 1.008rem, 1.95rem)" }] }
+          - { label: Layout, name: layout, widget: select, options: [{ label: "Full width", value: ".full-width" }, { label: "80%", value: "80" }, { label: "60%", value: "60" }] }

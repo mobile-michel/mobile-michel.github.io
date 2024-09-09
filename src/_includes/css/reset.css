@@ -17,6 +17,14 @@ html {
     text-size-adjust: none;
 }
 
+body {
+    margin: 0;
+}
+
+body-container, main-container {
+    display: block;
+}
+
 /* Remove default margin in favour of better control in authored CSS */
 body,
 h1,
